@@ -1,0 +1,47 @@
+{
+  "id": 249076,
+  "num_rows": 1000,
+  "file_format": "json",
+  "name": "employee",
+  "array": true,
+  "columns": [
+    {
+      "name": "id",
+      "null_percentage": 0,
+      "type": "EIN",
+      "formula": ""
+    },
+    {
+      "name": "first_name",
+      "null_percentage": 0,
+      "type": "First Name",
+      "formula": ""
+    },
+    {
+      "name": "last_name",
+      "null_percentage": 0,
+      "type": "Last Name",
+      "formula": ""
+    },
+    {
+      "name": "title",
+      "null_percentage": 0,
+      "type": "Job Title",
+      "formula": ""
+    },
+    {
+      "name": "department",
+      "null_percentage": 0,
+      "type": "Department (Corporate)",
+      "formula": ""
+    },
+    {
+      "name": "image",
+      "null_percentage": 0,
+      "type": "Avatar",
+      "height": 50,
+      "width": 50,
+      "formula": ""
+    }
+  ]
+}
