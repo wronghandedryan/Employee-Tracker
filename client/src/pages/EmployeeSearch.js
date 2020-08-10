@@ -16,7 +16,7 @@ const EmployeeListPage = () => {
   const removeFromSelected = id => {
     dispatch({
       type: REMOVE_SELECTED,
-      _id: {title, department, first_name, last_name, image} 
+      _id: id
     });
   };
 
@@ -28,19 +28,19 @@ const EmployeeListPage = () => {
     <div className="container mb-5 mt-5">
       <h1 className="text-center">Here's All of Your Selected Employee's</h1>
       {state.favorites.length ? (
-        <List>
+        <ul>
           <h3 className="mb-5 mt-5">Click on a Employee Name to view in detail</h3>
           {state.favorites.map(employee => (
-            <ListItem key={employee._id}>
+            <li key={employee._id}>
               <Link to={"/employeeList/" + employee._id}>
                 <strong>
                   {employee.title, employee.department, employee.first_name, employee.last_name} by {employee.title, employee.department, employee.first_name, employee.last_name}
                 </strong>
               </Link>
               <DeleteBtn onClick={() => removeFromFavorites(post._id)} />
-            </ListItem>
+            </li>
           ))}
-        </List>
+        </ul>
       ) : (
         <h3>You haven't added any Employee's yet!</h3>
       )}

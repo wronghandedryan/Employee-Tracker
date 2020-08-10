@@ -5,7 +5,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GlobalState";
 import { SET_CURRENT_EMPLOYEE, ADD_EMPLOYEE, REMOVE_EMPLOYEE } from "../utils/actions";
-
+import { EmployeeList } from "../components/"
 const EmployeeListPage = props => {
   const [state, dispatch] = useStoreContext();
 

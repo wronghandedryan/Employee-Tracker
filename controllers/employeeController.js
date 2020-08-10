@@ -9,7 +9,11 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findByfirst_name: function(req, res) {
-    db.employee.findById(req.params.first_name)
+    //req.params.search =//req.params.info
+    //switch then ccreate condition
+
+    
+    db.employee.findById(req.params.first_name) /// find  where
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div>
-        <StoreProviderii>
+        <StoreProvider>
           <Nav />
           <Switch>
             <Route exact path="/" component={Home} />
@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/employee/:employeelist" component={EmployeeSearch} />
             <Route component={NoMatch} />
           </Switch>
-        </StoreProviderii>
+        </StoreProvider>
       </div>
     </Router>
   );

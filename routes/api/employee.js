@@ -1,15 +1,16 @@
 const router = require("express").Router();
 const employeeController = require("../../controllers(employeeController")
 
-// Matches with "/api/posts"
+// Matches with "/api/employee"  /host/api/employee/parameter
 router
   .route("/")
   .get(employeeController.findAll)
   .post(employeeController.create);
 
-// Matches with "/api/posts/:id"
+
+// Matches with "/api/eployee/something/something"
 router
-  .route("/:first_name")
+  .route("/:search/:info")
   .get(employeeController.findByfirst_name)
   .put(employeeController.update)
   .delete(employeeController.remove);

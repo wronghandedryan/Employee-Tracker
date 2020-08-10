@@ -6,4 +6,4 @@ export const LOADING = "LOADING";
 
 export const ADD_SELECTED = "ADD_SELECTED";
 export const REMOVE_SELECTED= "REMOVE_SELECTED";
-
+export const UPDATE_SELECTED= "UPDATE_SELECTED";
